@@ -4,10 +4,10 @@ export default function getResponseFromAPI() {
 
         //dynamic variable for success or failure
         const succesOrFailure = Math.random() >= 0.5;
-        
+
         // Boolean check for function check on async operation's
         // success or failure
-        if (true) {
+        if (succesOrFailure) {
             resolve('API call was successful');
         }
         else {
