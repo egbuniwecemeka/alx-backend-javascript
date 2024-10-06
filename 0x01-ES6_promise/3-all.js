@@ -6,7 +6,5 @@ export function handleProfileSignup() {
         console.log(photoResult.body, userResult.firstName, userResult.lastName);
     }).catch(() => {
         console.log(Error('Signup system offline'));
-    }).finally(() => {
-        console.log('Promise settled');
-    })
+    });
 }
