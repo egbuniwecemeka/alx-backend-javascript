@@ -1,6 +1,6 @@
 export default function uploadPhoto(filename) {
     return new Promise((resolve, reject) => {
-        if (filename) {
+        if (!filename) {
             reject(Error(`${filename} cannot be processed`));
         } else {
             resolve(`File ${filename} upload successful`);
