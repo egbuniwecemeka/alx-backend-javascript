@@ -6,7 +6,7 @@ export default function signUpUser(firstName, lastName) {
         };
 
         if (profile){
-            resolve(console.log(profile));
+            resolve(profile);
         } else {
             reject(Error('Promise object did not resolve!'));
         }
