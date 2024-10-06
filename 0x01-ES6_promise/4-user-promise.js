@@ -1,5 +1,5 @@
 export default function signUpUser(firstName, lastName) {
-    return  new Promise((resolve, reject) => {
+    return new Promise((resolve, reject) => {
         const profile = {
             firstName,
             lastName,
@@ -10,5 +10,5 @@ export default function signUpUser(firstName, lastName) {
         } else {
             reject(Error('Promise object did not resolve!'));
         }
-    })
+    });
 }
