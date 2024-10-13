@@ -12,7 +12,7 @@ export default class Shape {
 
     // Getter
     get getArea() {
-        return this.calcArea
+        return this.calcArea()
     }
 
     *getSides() {
