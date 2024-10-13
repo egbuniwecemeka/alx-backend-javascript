@@ -7,7 +7,7 @@ export default class Shape {
 
     // Method
     calcArea() {
-        return this.height & this.width
+        return this.height * this.width
     }
 
     // Getter
