@@ -5,17 +5,19 @@ export default class Shape {
         this.height = height
     }
 
-    // Method
+    // Method to calculate area
     calcArea() {
         return this.height * this.width
     }
 
-    // Getter
+    // Getter method to retrieve area
     get getArea() {
         return this.calcArea()
     }
 
     *getSides() {
+        yield this.width
+        yield this.height
         yield this.width
         yield this.height
     }
