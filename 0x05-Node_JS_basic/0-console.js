@@ -1,5 +1,5 @@
-export default function displayMessage(stdout) {
-    if (stdout == 'string') {
-        console.log(stdout)
+function displayMessage(stdout) {
+    if (typeof stdout == 'string') {
+        console.log(stdout);
     }
 }
