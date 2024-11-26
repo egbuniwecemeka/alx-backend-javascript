@@ -1,5 +1,3 @@
-#!/usr/bin/node
-
 const http = require('http');
 
 // Create the HTTP server
