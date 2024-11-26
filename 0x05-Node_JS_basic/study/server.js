@@ -1,4 +1,4 @@
-const {startServer} = require('node:http')
+const {startServer} = require('http')
 
 const host = '127.0.0.1'
 const port = 3000
@@ -9,4 +9,6 @@ const server = startServer((req, res) => {
     res.end('Hello World!');
 });
 
-server.listen()
+server.listen(port, host, () => {
+    console.log(`Server running at http://${host}:${port}/`)
+});
