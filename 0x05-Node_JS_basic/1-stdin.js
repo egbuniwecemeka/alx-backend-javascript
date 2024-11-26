@@ -3,8 +3,9 @@
 process.stdout.write('Welcome to Holberton School, what is your name?\n');
 
 process.stdin.on('data', (input) => {
-  if (input !== null) {
-    process.stdout.write(`Your name is: ${input}\n`);
+    const name = input.trim()
+  if (name !== null) {
+    process.stdout.write(`Your name is: ${name}\n`);
   }
 });
 
