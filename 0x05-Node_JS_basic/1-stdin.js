@@ -8,7 +8,7 @@ process.stdin.setEncoding('utf8');
 
 process.stdin.on('data', (input) => {
     const name = input.trim();
-    console.log(`Your name is: ${name}\n`);
+    console.log(`Your name is: ${name}`);
 });
 
 process.stdin.on('end', () => {
