@@ -7,7 +7,7 @@ process.stdin.resume();
 process.stdin.setEncoding('utf8');
 
 process.stdin.on('data', (input) => {
-    const name = input.trim();
+    const name = input.replace(/[\r\n]+/g, '').trim();
     process.stdout.write(`Your name is: ${name}\n`);
 });
 
