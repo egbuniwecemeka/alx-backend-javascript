@@ -15,4 +15,4 @@ server.listen((host, port), () => {
   console.log(`The server is runnting at ${host}:${port}/`);
 });
 
-module.exports = app
+module.exports = app;
