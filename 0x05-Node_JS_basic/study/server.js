@@ -1,4 +1,4 @@
-const createServer = require('http')
+const { createServer } = require('http')
 
 const host = '127.0.0.1'
 const port = 3000
