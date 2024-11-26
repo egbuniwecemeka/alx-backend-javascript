@@ -8,11 +8,9 @@ process.stdin.setEncoding('utf8');
 
 process.stdin.on('data', (input) => {
     const name = input.trim();
-  if (name !== null) {
     process.stdout.write(`Your name is: ${name}\n`);
-  }
 });
 
-process.stdin.on('close', () => {
+process.stdin.on('end', () => {
   console.log('This important software is now closing');
 });
