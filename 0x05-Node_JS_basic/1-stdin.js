@@ -7,7 +7,7 @@ process.stdin.resume();
 process.stdin.setEncoding('utf8');
 
 process.stdin.on('data', (input) => {
-    process.stdout.write(`Your name is: ${input}\n`);
+    process.stdout.write(`Your name is: ${input.trim()}\n`);
 });
 
 process.stdin.on('end', () => {
