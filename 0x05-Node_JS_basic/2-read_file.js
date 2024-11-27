@@ -5,15 +5,24 @@ function countStudents(path) {
   // Read the file synchronously
   const data = fs.readFileSync(path, 'utf-8');
 
-  // SPLIT DATA INTO ROWS
+  // split data into rows and extract headers
   const rows = data.trim().split('\n');
+  const headers = rows[0].split(','); // Extract the first row as headers
+  const studentsNum = rows.slice(1);  // Exclude the header row
 
-  // Process the header and student data rows
-  const headers = rows[0].split(',');
-  const studentsNum = rows.slice(1);
+  // Check if data is present
+  if (studentsNum.length === 0) {
+    console.log('No student data found');
+    return;
+  }
 
-  // Group students by column
+  // Find the index of the 'field' column
   const fieldIndex = headers.indexOf('field');
+  if (fieldIndex === -1) {
+    throw new Error ("The field column is missing in the file.");
+  }
+
+  // Group students by field
   const studentByField = {};
 
   studentsNum.forEach((row) => {
@@ -21,7 +30,7 @@ function countStudents(path) {
     const field = column[fieldIndex]
 
     if (!studentByField[field]) {
-      studentByField = []
+      studentByField = [];
     }
     studentByField[field].push(column);
   });
