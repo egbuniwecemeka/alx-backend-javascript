@@ -9,7 +9,7 @@ function countStudents(path) {
   const rows = data.trim().split('\n');
 
   // Process the header and student data rows
-  const headers = rows.split(',');
+  const headers = rows[0].split(',');
   const studentsNum = rows.slice(1);
 
   // Group students by column
