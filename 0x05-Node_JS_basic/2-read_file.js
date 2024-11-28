@@ -8,7 +8,7 @@ try {
 
   const rows = data.split(',');
   const headers = rows[0].split()
-  console.log(headers)
+  console.log(rows)
 
 } catch (error) {
   console.error('Cannot load the database')
