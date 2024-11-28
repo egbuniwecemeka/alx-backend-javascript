@@ -28,15 +28,16 @@ try {
     if (!fields[field]) {
       fields[field] = []
     }
+    fields[field].push(name);
 
-    // Formatting students per field
-    for (const [field, names] in Object.entries(fields)) {
-      console.log(`Number of students in ${field}: ${names.length}. List: ${names.join(', ')}`);
-    }
-  })
+  });
+  
+  console.log(`Number of students: ${studentRows.length}`);    
 
-  console.log(`Number of students: ${studentRows.length}`);
-  console.log(header);
+  // Formatting students per field
+  for (const [field, names] in Object.entries(fields)) {
+    console.log(`Number of students in ${field}: ${names.length}. List: ${names.join(', ')}`);
+  }
 
 } catch (error) {
   console.error('Cannot load the database')
