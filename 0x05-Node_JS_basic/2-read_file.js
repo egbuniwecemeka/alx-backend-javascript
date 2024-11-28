@@ -8,7 +8,7 @@ try {
 
   const rows = data.split('\n');
   for (var row in rows) {
-    console.log(row);
+    console.log(row.length);
   }
   //const headers = rows[1].split()
 
