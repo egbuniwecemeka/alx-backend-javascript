@@ -16,8 +16,6 @@ try {
   console.log(`Number of students: ${studentNum.length}`);
 
 
-  console.log(`Number of students: ${rows.length}`);
-
 } catch (error) {
   console.error('Cannot load the database')
 }
