@@ -9,7 +9,7 @@ try {
   const rows = data.split('\n').filter((row) => row.trim() !== "");
 
   rows.forEach((row, index) => {
-    console.log(`Row ${index}: ${row[0]}`);
+    console.log(`Row ${index}: ${row}`);
   })
   //const headers = rows[1].split()
 
