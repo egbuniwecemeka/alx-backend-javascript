@@ -10,10 +10,6 @@ try {
 
   console.log(`Number of students: ${rows.length}`);
 
-  rows.forEach((row, index) => {
-    console.log(`Row ${index}: ${row}`);
-  })
-
 } catch (error) {
   console.error('Cannot load the database')
 }
