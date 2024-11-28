@@ -7,7 +7,7 @@ try {
   const data = fs.readFileSync(filePath, 'utf8');
 
   const rows = data.split(',');
-  const headers = rows[0].split()
+  const headers = rows[1].split()
   console.log(rows)
 
 } catch (error) {
