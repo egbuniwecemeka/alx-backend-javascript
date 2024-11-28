@@ -7,7 +7,8 @@ try {
   const data = fs.readFileSync(filePath, 'utf8');
 
   const rows = data.split(',');
-  console.log(rows)
+  const headers = rows[0].split()
+  console.log(headers)
 
 } catch (error) {
   console.error('Cannot load the database')
