@@ -7,9 +7,10 @@ try {
   const data = fs.readFileSync(filePath, 'utf8');
 
   const rows = data.split('\n');
-  for (var row in rows) {
-    console.log(row.length);
-  }
+
+  rows.forEach((row, index) => {
+    console.log(`Row ${index}: ${row}`);
+  })
   //const headers = rows[1].split()
 
 } catch (error) {
