@@ -8,7 +8,7 @@ try {
 
   const rows = data.split('\n').filter((row) => row.trim() !== "");
 
-  console.log(rows.length);
+  console.log(`Number of students: ${rows.length}`);
 
   rows.forEach((row, index) => {
     console.log(`Row ${index}: ${row}`);
