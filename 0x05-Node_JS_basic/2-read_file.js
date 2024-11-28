@@ -20,12 +20,13 @@ try {
   studentRows.forEach((row) => {
     const studentData = row.split(',');
     console.log(studentData)
+    const field = studentData[studentData - 1]
+    console.log(field);
   })
 
 
   console.log(`Number of students: ${studentRows.length}`);
   console.log(header);
-  console.log(studentRows);
 
 } catch (error) {
   console.error('Cannot load the database')
