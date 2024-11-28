@@ -8,10 +8,9 @@ function countStudents(filePath) {
     const data = fs.readFileSync(filePath, 'utf8');
 
     // Split data into rows seperated by a newline
-    const rows = data.split('\n').filter((row) => row.trim() !== "");
+    const rows = data.split('\n').filter((row) => row.trim() !== '');
 
-    // Extract header and student data (number)
-    const header = rows[0].split(',');
+    // Extract student data (number)
     const studentRows = rows.slice(1);
 
     // Group students by field of study
@@ -19,11 +18,11 @@ function countStudents(filePath) {
 
     studentRows.forEach((row) => {
       const studentData = row.split(',');
-      const field = studentData[studentData.length - 1]
+      const field = studentData[studentData.length - 1];
       const name = studentData[0];
 
       if (!fields[field]) {
-        fields[field] = []
+        fields[field] = [];
       }
       fields[field].push(name);
 
