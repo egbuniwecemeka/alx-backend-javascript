@@ -12,15 +12,20 @@ try {
 
   // Extract header and student data (number)
   const header = rows[0].split(',');
-  const studentNum = rows.slice(1);
+  const studentRows = rows.slice(1);
 
   // Group students by field of study
   const fields = {};
 
+  studentRows.forEach((row) => {
+    const studentData = row.split(',');
+    console.log(studentData)
+  })
 
-  console.log(`Number of students: ${studentNum.length}`);
+
+  console.log(`Number of students: ${studentRows.length}`);
   console.log(header);
-  console.log(studentNum);
+  console.log(studentRows);
 
 } catch (error) {
   console.error('Cannot load the database')
