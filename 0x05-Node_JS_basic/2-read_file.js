@@ -2,6 +2,7 @@
 
 const fs = require('fs');
 
+function countStudents() {
 // set path to the file
 const filePath = './database.csv';
 
@@ -12,3 +13,6 @@ try {
 } catch (error) {
   console.error('Cannot load the database')
 }
+}
+
+module.exports = countStudents;
