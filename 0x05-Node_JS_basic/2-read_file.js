@@ -2,10 +2,7 @@
 
 const fs = require('fs');
 
-function countStudents() {
-// set path to the file
-const filePath = './database.csv';
-
+function countStudents(filePath) {
 try {
   const data = fs.readFileSync(filePath, 'utf8');
 
