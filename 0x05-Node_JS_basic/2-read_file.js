@@ -20,7 +20,7 @@ try {
   studentRows.forEach((row) => {
     const studentData = row.split(',');
     console.log(studentData)
-    const field = studentData[studentData - 1]
+    const field = studentData[studentData.length - 1]
     console.log(field);
   })
 
