@@ -19,7 +19,6 @@ try {
 
   studentRows.forEach((row) => {
     const studentData = row.split(',');
-    console.log(studentData)
     const field = studentData[studentData.length - 1]
     const name = studentData[0];
     console.log(field);
