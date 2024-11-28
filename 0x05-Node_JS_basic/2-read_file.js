@@ -26,7 +26,7 @@ function countStudents(filePath) {
       }
       fields[field].push(name);
 
-  });
+    });
 
       console.log(`Number of students: ${studentRows.length}`);    
 
