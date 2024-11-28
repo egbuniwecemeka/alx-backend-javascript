@@ -8,10 +8,11 @@ try {
 
   const rows = data.split('\n').filter((row) => row.trim() !== "");
 
+  console.log(rows.length);
+
   rows.forEach((row, index) => {
     console.log(`Row ${index}: ${row}`);
   })
-  //const headers = rows[1].split()
 
 } catch (error) {
   console.error('Cannot load the database')
