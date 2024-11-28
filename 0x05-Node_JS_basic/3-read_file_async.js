@@ -8,3 +8,5 @@ function countStudents(filePath) {
     console.log(data);
   });
 }
+
+module.exports = countStudents;
