@@ -13,7 +13,7 @@ try {
   const header = rows[0].slice(0);
 
   const studentNum = rows.slice(1);
-  console.log(studentNum);
+  console.log(studentNum.length);
   console.log(header)
 
 
