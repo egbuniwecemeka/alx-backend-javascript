@@ -9,7 +9,7 @@ try {
   const rows = data.split('\n');
 
   rows.forEach((row, index) => {
-    console.log(`Row ${index}: ${row}`);
+    console.log(`Row ${index.length}: ${row}`);
   })
   //const headers = rows[1].split()
 
