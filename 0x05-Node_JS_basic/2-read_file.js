@@ -9,6 +9,7 @@ try {
   const rows = data.split(',');
   const headers = rows[1].split()
   console.log(rows)
+  console.log(headers);
 
 } catch (error) {
   console.error('Cannot load the database')
