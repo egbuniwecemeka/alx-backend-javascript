@@ -24,8 +24,16 @@ try {
     const name = studentData[0];
     console.log(field);
     console.log(name);
-  })
 
+    if (!fields[field]) {
+      fields[field] = []
+    }
+
+    // Formatting students per field
+    for (const [field, names] in Object.entries(fields)) {
+      console.log(`Number of students in ${field}: ${names.length}. List: ${names.join(', ')}`);
+    }
+  })
 
   console.log(`Number of students: ${studentRows.length}`);
   console.log(header);
