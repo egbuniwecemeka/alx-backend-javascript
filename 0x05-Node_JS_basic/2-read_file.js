@@ -6,7 +6,7 @@ function countStudents(filePath) {
 try {
   const data = fs.readFileSync(filePath, 'utf8');
 
-  const rows = data.split(',');
+  const rows = data.trim().split(',');
   console.log(rows)
 
 } catch (error) {
