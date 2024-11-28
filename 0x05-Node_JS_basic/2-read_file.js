@@ -27,7 +27,6 @@ function countStudents(filePath) {
       fields[field].push(name);
 
     });
-
     console.log(`Number of students: ${studentRows.length}`);
 
     // Formatting students per field
@@ -38,6 +37,6 @@ function countStudents(filePath) {
     } catch (error) {
       throw new Error('Cannot load the database');
     }
-}
+  }
 
 module.exports = countStudents;
