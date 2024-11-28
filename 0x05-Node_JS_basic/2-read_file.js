@@ -29,16 +29,16 @@ function countStudents(filePath) {
 
   });
 
-  console.log(`Number of students: ${studentRows.length}`);    
+      console.log(`Number of students: ${studentRows.length}`);    
 
-  // Formatting students per field
-  for (const [field, names] of Object.entries(fields)) {
-    console.log(`Number of students in ${field}: ${names.length}. List: ${names.join(', ')}`);
-  }
+      // Formatting students per field
+      for (const [field, names] of Object.entries(fields)) {
+        console.log(`Number of students in ${field}: ${names.length}. List: ${names.join(', ')}`);
+      }
 
-} catch (error) {
-  throw new Error('Cannot load the database');
-}
+    } catch (error) {
+      throw new Error('Cannot load the database');
+    }
 }
 
 module.exports = countStudents;
