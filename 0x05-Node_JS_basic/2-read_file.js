@@ -21,8 +21,6 @@ try {
     const studentData = row.split(',');
     const field = studentData[studentData.length - 1]
     const name = studentData[0];
-    console.log(field);
-    console.log(name);
 
     if (!fields[field]) {
       fields[field] = []
