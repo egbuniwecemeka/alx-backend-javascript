@@ -34,7 +34,7 @@ try {
   console.log(`Number of students: ${studentRows.length}`);    
 
   // Formatting students per field
-  for (const [field, names] in Object.entries(fields)) {
+  for (const [field, names] of Object.entries(fields)) {
     console.log(`Number of students in ${field}: ${names.length}. List: ${names.join(', ')}`);
   }
 
