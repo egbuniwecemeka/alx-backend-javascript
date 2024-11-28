@@ -37,7 +37,7 @@ try {
   }
 
 } catch (error) {
-  console.error('Cannot load the database')
+  throw new Error('Cannot load the database');
 }
 }
 
