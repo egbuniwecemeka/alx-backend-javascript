@@ -12,6 +12,8 @@ function countStudents(filePath) {
 
     const rows = data.split('\n').filter((row) => row.trim() !== "");
     console.log(rows)
+    const headers = rows[0].slice()
+    console.log(headers);
 
     });
   });
