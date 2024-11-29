@@ -17,7 +17,7 @@ function countStudents(filePath) {
     const studentRows = rows.slice(1);
 
     //
-    fields = {};
+    const fields = {};
 
     //
     studentRows.forEach((row) => {
@@ -29,7 +29,13 @@ function countStudents(filePath) {
         fields[field] = [];
       }
       fields[field].push(name);
-    })
+    });
+    console.log(`Number of students: ${studentRows.length}`);
+
+    // Formatting students per field
+    for (const [field, names] of Object.entries(fields)) {
+      console.log(`Number of students in ${field}: ${names.length}. List: ${names.join(', ')}`);
+    }
 
     });
   });
