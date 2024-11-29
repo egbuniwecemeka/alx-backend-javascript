@@ -10,15 +10,23 @@ function countStudents(filePath) {
         return;
       }
 
+    //
     const rows = data.split('\n').filter((row) => row.trim() !== "");
-    console.log(rows)
+
+    //
     const studentRows = rows.slice(1)
 
+    //
     fields = {};
 
+    //
     studentRows.forEach((row) => {
       const studentData = row.split(',')
       console.log(studentData)
+      const field = studentData[studentData.length - 1];
+      console.log(field);
+      const name = row[0]
+      console.log(name);
     })
 
     });
