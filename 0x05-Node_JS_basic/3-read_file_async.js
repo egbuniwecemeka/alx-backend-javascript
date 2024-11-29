@@ -25,7 +25,7 @@ function countStudents(filePath) {
       console.log(studentData)
       const field = studentData[studentData.length - 1];
       console.log(field);
-      const name = row[0]
+      const name = row[0].split(',');
       console.log(name);
     })
 
