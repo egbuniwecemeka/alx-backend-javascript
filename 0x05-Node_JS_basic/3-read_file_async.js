@@ -14,19 +14,21 @@ function countStudents(filePath) {
     const rows = data.split('\n').filter((row) => row.trim() !== "");
 
     //
-    const studentRows = rows.slice(1)
+    const studentRows = rows.slice(1);
 
     //
     fields = {};
 
     //
     studentRows.forEach((row) => {
-      const studentData = row.split(',')
-      console.log(studentData)
+      const studentData = row.split(',');
       const field = studentData[studentData.length - 1];
-      console.log(field);
-      const name = studentData[0]
-      console.log(name);
+      const name = studentData[0];
+
+      if (!fields[field]) {
+        fields[field] = [];
+      }
+      fields[field].push(name);
     })
 
     });
