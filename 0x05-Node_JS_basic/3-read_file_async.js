@@ -17,11 +17,9 @@ function countStudents(filePath) {
     fields = {};
 
     studentRows.forEach((row) => {
-      const studentData = rows.split(',')
+      const studentData = row.split(',')
       console.log(studentData)
     })
-
-    console.log(headers);
 
     });
   });
