@@ -12,7 +12,14 @@ function countStudents(filePath) {
 
     const rows = data.split('\n').filter((row) => row.trim() !== "");
     console.log(rows)
-    const headers = rows.slice(1)
+    const studentRows = rows.slice(1)
+
+    fields = {};
+
+    studentRows.forEach((row) => {
+      const studentData = rows.split(',')
+      console.log(studentData)
+    })
 
     console.log(headers);
 
