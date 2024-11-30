@@ -1,5 +1,5 @@
 var assert = require('assert');
-const calculateNumber = require('0-calcul');
+const calculateNumber = require('./0-calcul');
 
 describe('Function', function () {
     it('should return the sum of two numbers', function () {
