@@ -6,7 +6,7 @@ function calculateNumber(type, a, b) {
   }
 
   const roundedA = Math.round(a);
-  const roundedB = Math.round(b)
+  const roundedB = Math.round(b);
 
   if (type === opsType[0]) {
     return roundedA + roundedB;
