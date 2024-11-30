@@ -8,5 +8,9 @@ describe('Function', function () {
 
     it('should round up both integers before summing up', function () {
         assert.strictEqual(calculateNumber(1.3, 4.8), 6);
-    })
+    });
+
+    it('should handle integers at midpoints correctly', function () {
+        assert.strictEqual(calculateNumber(1.5, 4.8), 7);
+    });
 });
