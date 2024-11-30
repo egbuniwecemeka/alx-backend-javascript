@@ -10,6 +10,14 @@ describe('Function', function () {
         assert.strictEqual(calculateNumber(1.3, 4.8), 6);
     });
 
+    it('should round up the first integer correctly before summing', function () {
+        assert.strictEqual(calculateNumber(1.4, 2), 4);
+    });
+
+    it('should round up the second integer correctly before summing', function () {
+        assert.strictEqual(calculateNumber(2, 4.4), 6);
+    });
+
     it('should handle integers at midpoints correctly', function () {
         assert.strictEqual(calculateNumber(1.5, 4.8), 7);
     });
