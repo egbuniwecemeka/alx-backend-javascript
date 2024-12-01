@@ -13,9 +13,9 @@ describe('sendPaymentRequestToApi - Sinon test', function () {
         sendPaymentRequestToApi(100, 20);
 
         // Assert that console.log was called with the right message
-        sinon.assert.calledOnceExactlyWith(consoleSpy, 'The total is: 10');
+        sinon.assert.calledOnceWithExactly(consoleSpy, 'The total is: 10');
         //Asert that Utils.calculateNumber was called with right arguments
-        sinon.assert.calledOnceExactlyWith(calculateNumberStub, 'SUM', 100, 20);
+        sinon.assert.calledOnceWithExactly(calculateNumberStub, 'SUM', 100, 20);
 
         // Restore the original function
         consoleSpy.restore();
