@@ -17,9 +17,9 @@ describe('calculateNumber - Chai Tests', function () {
         expect(result).to.equal(0.2);
     });
 
-/*     it('return Error if the divisor is 0 and the operator is DIVIDE', function() {
+    it('return Error if the divisor is 0 and the operator is DIVIDE', function() {
         const result = calculateNumber('DIVIDE', 1.4, 0);
-        expect(result).to.throw('Error');
-    }); */
+        expect(result).to.equal('Error');
+    });
 
 })
