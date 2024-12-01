@@ -14,7 +14,7 @@ function calculateNumber(type, a, b) {
     return roundedA - roundedB;
   } else if (type === 'DIVIDE') {
     if (roundedB === 0) {
-        return  new Error('Error');
+        return 'Error';
     }
     return roundedA / roundedB;
   }
