@@ -22,4 +22,3 @@ describe('calculateNumber - Chai Tests', function () {
     })
 
 })
-//expect(() => calculateNumber('DIVIDE', 2, 0)).to.throw('Error');
