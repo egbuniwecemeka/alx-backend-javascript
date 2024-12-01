@@ -4,7 +4,7 @@ const Utils = require('./utils');
 
 describe('sendPaymentRequestToApi - Sinon test', function () {
     it('should call Utils.calculateNumber with SUM, 100, and 20', function () {
-        // Create a spy on Utils.calculateNumber
+        // Create a spy on console.log
         const calculateNumberSpy = sinon.spy(console, 'log');
 
         // Create a stub for Utils.calculateNumber
@@ -17,7 +17,7 @@ describe('sendPaymentRequestToApi - Sinon test', function () {
         sinon.assert.calledOnceExactlyWith(calculateNumberSpy, 'The total is: 10');
 
         //Asert that Utils.calculateNumber was called with right arguments
-        sinon.assert.calledOnceWith(calculateNumberStub, 'SUM', 100, 20);
+        sinon.assert.calledOnceExactlyWith(calculateNumberStub, 'SUM', 100, 20);
 
         // Restore the original function
         calculateNumberSpy.restore();
