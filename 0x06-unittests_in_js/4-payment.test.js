@@ -8,7 +8,7 @@ describe('sendPaymentRequestToApi - Sinon test', function () {
         const calculateNumberSpy = sinon.spy(Utils, 'calculateNumber');
         // Create a spy on console.log
         const consoleSpy = sinon.spy(console, 'log');
-        // Create a stub for Utils.calculateNumber
+        // Create a stub for Utils.calculateNumber to always return 10
         const calculateNumberStub = sinon.stub(Utils, 'calculateNumber').returns(10);
 
         // Call sendPaymentTpApi
