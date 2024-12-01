@@ -15,7 +15,7 @@ describe('sendPaymentRequestToApi - Hooks', function () {
 
   afterEach(function () {
     // Restore the console.log function after each test
-    consoleSpy.reload();
+    consoleSpy.restore();
   });
 
   it('should log the total of 120 and call console.log is called with 100 and 20', function () {
