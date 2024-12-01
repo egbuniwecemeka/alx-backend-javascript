@@ -17,5 +17,9 @@ describe('calculateNumber - Chai Tests', function () {
         expect(result).to.equal(0.2);
     });
 
+    it('return Error if the divisor is 0 and the operator is DIVIDE', function() {
+        expect(calculateNumber('DIVIDE', 1.4, 0)).to.throw('Error');
+    })
+
 })
 //expect(() => calculateNumber('DIVIDE', 2, 0)).to.throw('Error');
