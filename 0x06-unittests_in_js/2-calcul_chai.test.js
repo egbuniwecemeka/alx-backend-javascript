@@ -7,6 +7,15 @@ describe('calculateNumber - Chai Tests', function () {
         expect(result).to.equal(6);
     });
 
+    it('returns the difference of  two integers, when operator is SUBTRACT', function () {
+        const result = calculateNumber('SUBTRACT', 1.4, 4.5);
+        expect(result).to.equal(-4);
+    });
+
+    it('returns the remainder of two operators, when operator is DIVIDE', function () {
+        const result = calculateNumber('DIVIDE', 1.4, 4.5);
+        expect(result).to.equal(0.2);
+    });
 
 })
 //expect(() => calculateNumber('DIVIDE', 2, 0)).to.throw('Error');
