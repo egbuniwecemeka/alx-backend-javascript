@@ -1,0 +1,3 @@
+function sendPaymentRequestToApi(totalAmount, totalShipping) {
+    
+}
