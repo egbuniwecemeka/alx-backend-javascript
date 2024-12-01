@@ -12,7 +12,7 @@ function calculateNumber(type, a, b) {
     return roundedA + roundedB;
   } else if (type === opsType[1]) {
     return roundedA - roundedB;
-  } else if (type === opsType[2]) {
+  } else if (type === 'DIVIDE') {
     if (roundedB === 0) {
         throw new Error('Error');
     }
