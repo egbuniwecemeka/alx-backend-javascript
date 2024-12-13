@@ -1,4 +1,4 @@
-export default class HolbertonCourse {
+export default class ALXCourse {
     constructor(name, length, students) {
         if (typeof length !== Number) {
             throw new TypeError('length must be a number')
