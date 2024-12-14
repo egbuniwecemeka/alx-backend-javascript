@@ -3,6 +3,7 @@ import ALXCourse from "./2-hbtn_course";
 const course = new ALXCourse('ES6', 1, ['Emeka', 'Chidewu']);
 console.log(course.get_name);
 course.set_name = "Python 101";
+console.log(course.get_name);
 
 try {
   course.set_name = 12;
