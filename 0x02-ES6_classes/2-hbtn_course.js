@@ -27,6 +27,9 @@ class ALXCourse {
 
     // Setter
     set name(name) {
+      if (typeof name != 'string') {
+        throw new TypeError('Name must be a string');
+      }
       this._name = name;
     }
 
@@ -37,6 +40,9 @@ class ALXCourse {
 
     // Setter length
     set length(length) {
+      if (typeof length != 'number') {
+        throw new TypeError('Length must be a number');
+      }
       this._length = length;
     }
 
@@ -47,9 +53,11 @@ class ALXCourse {
 
     // Setter students
     set students(students) {
+      if (!Array.isArray(students)) {
+        throw new TypeError('Students must be an array');
+      }
       this._students = students;
     }
 }
 
-const ALXCourse = ALXCourse()
 export default ALXCourse;
