@@ -47,6 +47,9 @@ class ALXCourse {
 
     // Setter students
     set students(students) {
-      this._students = students
+      this._students = students;
     }
 }
+
+const ALXCourse = ALXCourse()
+module.exports = ALXCourse
