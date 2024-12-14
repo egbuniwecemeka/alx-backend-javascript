@@ -42,7 +42,7 @@ class Currency {
   }
 
   displayFullCurrency() {
-    return console.log(`${this.get_code} ${this.get_name}`);
+    return `${this.get_code} (${this.get_name})`;
   }
 }
 
