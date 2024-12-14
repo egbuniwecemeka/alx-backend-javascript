@@ -19,4 +19,34 @@ class ALXCourse {
       this._length = length;
       this._students = students;
     }
+
+    // Getter name
+    get name() {
+      return this._name;
+    }
+
+    // Setter
+    set name(name) {
+      this._name = name;
+    }
+
+    // Getter length
+    get length() {
+      return this._length;
+    }
+
+    // Setter length
+    set length(length) {
+      this._length = length;
+    }
+
+    // Getter students
+    get students() {
+      return this._students;
+    }
+
+    // Setter students
+    set students(students) {
+      this._students = students
+    }
 }
