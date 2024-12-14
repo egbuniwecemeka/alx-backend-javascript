@@ -52,3 +52,4 @@ class ALXCourse {
 }
 
 const ALXCourse = ALXCourse()
+export default ALXCourse;
