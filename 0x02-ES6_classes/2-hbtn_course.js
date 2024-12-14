@@ -1,4 +1,4 @@
-export default class ALXCourse {
+class ALXCourse {
     constructor(name, length, students) {
       // Attribute type check
       if (typeof name !== 'string') {
