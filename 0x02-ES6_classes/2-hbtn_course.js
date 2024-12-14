@@ -13,5 +13,10 @@ class ALXCourse {
       if (!Array.isArray(students)) {
         throw new TypeError('Students must be an array');
       }
+
+      // Attribute initialization
+      this._name = name;
+      this._length = length;
+      this._students = students;
     }
 }
