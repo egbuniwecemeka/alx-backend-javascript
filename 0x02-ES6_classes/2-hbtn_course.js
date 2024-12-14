@@ -52,4 +52,3 @@ class ALXCourse {
 }
 
 const ALXCourse = ALXCourse()
-module.exports = ALXCourse
