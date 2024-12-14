@@ -37,8 +37,12 @@ class Currency {
   }
 
   // Getter name
-  get name() {
+  get get_name() {
     return this._name;
+  }
+
+  displayFullCurrency() {
+    return console.log(`${this.get_code}: ${this.get_name}`);
   }
 }
 
