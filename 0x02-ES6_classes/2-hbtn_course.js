@@ -27,7 +27,7 @@ class ALXCourse {
 
   // Setter
   set name(name) {
-    if (typeof name != 'string') {
+    if (typeof name !== 'string') {
       throw new TypeError('Name must be a string');
     }
     this._name = name;
@@ -40,7 +40,7 @@ class ALXCourse {
 
   // Setter length
   set length(length) {
-    if (typeof length != 'number') {
+    if (typeof length !== 'number') {
       throw new TypeError('Length must be a number');
     }
     this._length = length;
