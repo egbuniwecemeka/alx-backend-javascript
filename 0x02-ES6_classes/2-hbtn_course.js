@@ -21,12 +21,12 @@ class ALXCourse {
   }
 
   // Getter name
-  get name() {
+  get get_name() {
     return this._name;
   }
 
   // Setter
-  set name(name) {
+  set set_name(name) {
     if (typeof name !== 'string') {
       throw new TypeError('Name must be a string');
     }
@@ -34,12 +34,12 @@ class ALXCourse {
   }
 
   // Getter length
-  get length() {
+  get get_length() {
     return this._length;
   }
 
   // Setter length
-  set length(length) {
+  set set_length(length) {
     if (typeof length !== 'number') {
       throw new TypeError('Length must be a number');
     }
@@ -47,12 +47,12 @@ class ALXCourse {
   }
 
   // Getter students
-  get students() {
+  get get_students() {
     return this._students;
   }
 
   // Setter students
-  set students(students) {
+  set set_students(students) {
     if (!Array.isArray(students)) {
       throw new TypeError('Students must be an array');
     }
