@@ -1,18 +1,18 @@
 class Currency {
-  constructor(code, name){
+  constructor(code, name) {
     // Type check for code attribute
     if (typeof code !== 'string') {
-        throw new TypeError('Code must be a string');
+      throw new TypeError('Code must be a string');
     }
 
     // Type check for name attribute
     if (typeof name !== 'string') {
-        throw new TypeError('Name must be a string');
+      throw new TypeError('Name must be a string');
     }
 
     // Initialize protected attribute
     this._code = code;
-    this._name = name
+    this._name = name;
   }
 
   // Setter code
