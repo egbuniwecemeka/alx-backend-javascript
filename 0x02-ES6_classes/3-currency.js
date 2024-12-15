@@ -16,7 +16,7 @@ class Currency {
   }
 
   // Setter code
-  set setCurrencyCode(value) {
+  set currencyCode(value) {
     if (typeof value !== 'string') {
       throw new TypeError('Code must be a string');
     }
@@ -24,12 +24,12 @@ class Currency {
   }
 
   // Getter code
-  get getCurrencyCode() {
+  get currencyCode() {
     return this._code;
   }
 
   // Setter name
-  set setCurrencyName(value) {
+  set currencyName(value) {
     if (typeof value !== 'string') {
       throw new TypeError('Name must be a string');
     }
@@ -37,7 +37,7 @@ class Currency {
   }
 
   // Getter name
-  get getCurrencyName() {
+  get currencyName() {
     return this._name;
   }
 
