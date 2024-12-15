@@ -16,7 +16,7 @@ class Currency {
   }
 
   // Setter code
-  set set_code(code) {
+  set code(code) {
     if (typeof code !== 'string') {
       throw new TypeError('Code must be a string');
     }
@@ -24,20 +24,20 @@ class Currency {
   }
 
   // Getter code
-  get get_code() {
+  get code() {
     return this._code;
   }
 
   // Setter name
-  set set_name(name) {
-    if (typeof name !== 'string') {
+  set name(value) {
+    if (typeof value !== 'string') {
       throw new TypeError('Name must be a string');
     }
-    this._name = name;
+    this._name = value;
   }
 
   // Getter name
-  get get_name() {
+  get name() {
     return this._name;
   }
 
