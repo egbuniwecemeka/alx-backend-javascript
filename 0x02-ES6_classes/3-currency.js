@@ -16,20 +16,20 @@ class Currency {
   }
 
   // Setter code
-  set code(code) {
-    if (typeof code !== 'string') {
+  set setCurrencyCode(value) {
+    if (typeof value !== 'string') {
       throw new TypeError('Code must be a string');
     }
-    this._code = code;
+    this._code = value;
   }
 
   // Getter code
-  get code() {
+  get getCurrencyCode() {
     return this._code;
   }
 
   // Setter name
-  set name(value) {
+  set setCurrencyName(value) {
     if (typeof value !== 'string') {
       throw new TypeError('Name must be a string');
     }
@@ -37,12 +37,12 @@ class Currency {
   }
 
   // Getter name
-  get name() {
+  get getCurrencyName() {
     return this._name;
   }
 
   displayFullCurrency() {
-    return `${this.name} (${this.code})`;
+    return `${this.getCurrencyName} (${this.getCurrencyCode})`;
   }
 }
 
