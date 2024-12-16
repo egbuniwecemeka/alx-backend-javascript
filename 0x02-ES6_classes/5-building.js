@@ -5,6 +5,11 @@ class Building {
         throw new TypeError('sqft must be a number');
     }
 
+    // Type check for abstract class
+    if (new.target !== Building) {
+        throw new TypeError('Class extending Building must override evacuationWarningMessage');
+    }
+
     this._sqft = sqft;
   }
 
@@ -15,9 +20,6 @@ class Building {
 
   
   evacuationWarningMessage() {
-    // Type check for abstract class
-    if (new.target !== Building) {
-        throw new TypeError('Class extending Building must override evacuationWarningMessage');
-    }
+    throw new TypeError('Class extending Building must override evacuationWarningMessage');
   }
 }
