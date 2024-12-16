@@ -43,7 +43,7 @@ class Pricing {
     }
 
     displayFullPrice() {
-      return `${this.pricingAmount} ${this.pricingCurrency.name} (${this.pricingCurrency.code})`;
+      return `${this.amount} ${this.currency.name} (${this.currency.code})`;
     }
 }
 
