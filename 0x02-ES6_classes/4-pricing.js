@@ -39,5 +39,10 @@ class Pricing {
       if (!(value instanceof Currency)) {
         throw new TypeError('Currency should be an instance of Currency class');
       }
+      this._currency = value;
+    }
+
+    displayFullPrice() {
+      return `${this.pricingAmount} ${this.pricingCurrency.name} (${this.pricingCurrency.code})`;
     }
 }
