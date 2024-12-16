@@ -46,3 +46,5 @@ class Pricing {
       return `${this.pricingAmount} ${this.pricingCurrency.name} (${this.pricingCurrency.code})`;
     }
 }
+
+export default Pricing;
