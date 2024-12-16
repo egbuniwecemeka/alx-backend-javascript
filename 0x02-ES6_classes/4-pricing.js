@@ -45,6 +45,18 @@ class Pricing {
     displayFullPrice() {
       return `${this.amount} ${this.currency.name} (${this.currency.code})`;
     }
+
+    static convertPrice(amount, conversionRate) {
+      if (typeof amount !== 'number') {
+        throw new TypeError('Amount should be a number');
+      }
+
+      if (typeof conversionRate !== 'number') {
+        throw new TypeError('conversionRate should be a number');
+      }
+
+      return amount * conversionRate;
+    }
 }
 
 export default Pricing;
