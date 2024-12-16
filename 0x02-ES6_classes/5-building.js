@@ -10,9 +10,10 @@ class Building {
 
   // Getter sqft attribute
   get sqft() {
-    return this.sqft;
+    return this._sqft;
   }
 
+  
   evacuationWarningMessage() {
     // Type check for abstract class
     if (new.target !== Building) {
