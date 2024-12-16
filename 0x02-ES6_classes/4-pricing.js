@@ -17,12 +17,12 @@ class Pricing {
     }
 
     // Getter amount
-    get pricingAmount() {
+    get amount() {
       return this._amount;
     }
 
     // Setter amount
-    set pricingAmount(value) {
+    set amount(value) {
       if (typeof value !== 'number') {
         throw new TypeError('Amount should be a number');
       }
@@ -30,12 +30,12 @@ class Pricing {
     }
 
     // Getter currency
-    get pricingCurrency() {
+    get currency() {
         return this._currency;
     }
 
     // Setter currency
-    set pricingCurrency(value) {
+    set currency(value) {
       if (!(value instanceof Currency)) {
         throw new TypeError('Currency should be an instance of Currency class');
       }
