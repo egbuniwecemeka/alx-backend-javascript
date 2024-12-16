@@ -2,12 +2,12 @@ class Building {
   constructor(sqft) {
     // Type check for sqft
     if (typeof sqft !== 'number') {
-        throw new TypeError('sqft must be a number');
+      throw new TypeError('sqft must be a number');
     }
 
     // Type check for abstract class
      if (new.target !== Building) {
-        throw new TypeError('Class extending Building must override evacuationWarningMessage');
+      throw new TypeError('Class extending Building must override evacuationWarningMessage');
     }
 
     this._sqft = sqft;
