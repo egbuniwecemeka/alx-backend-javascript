@@ -6,7 +6,7 @@ class Building {
     }
 
     // Type check for abstract class
-     if (new.target !== Building) {
+    if (new.target !== Building) {
       throw new TypeError('Class extending Building must override evacuationWarningMessage');
     }
 
@@ -19,7 +19,9 @@ class Building {
   }
 
   evacuationWarningMessage() {
-    throw new TypeError('Class extending Building must override evacuationWarningMessage');
+    if (this instanceof Building) {
+        throw new TypeError('Class extending Building must override evacuationWarningMessage');
+    }
   }
 }
 
