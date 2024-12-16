@@ -6,7 +6,7 @@ console.log(b.evacuationWarningMessage);
 class TestBuilding extends Building {};
 
 try {
-  const b = TestBuilding(200);
+  new TestBuilding(200);
 } catch (err) {
   console.log(err);
 }
