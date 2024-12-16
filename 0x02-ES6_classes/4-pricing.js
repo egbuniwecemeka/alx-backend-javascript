@@ -31,7 +31,7 @@ class Pricing {
 
   // Getter currency
   get currency() {
-      return this._currency;
+    return this._currency;
   }
 
   // Setter currency
