@@ -20,7 +20,7 @@ class Building {
 
   evacuationWarningMessage() {
     if (this instanceof Building) {
-        throw new TypeError('Class extending Building must override evacuationWarningMessage');
+      throw new TypeError('Class extending Building must override evacuationWarningMessage');
     }
   }
 }
