@@ -11,19 +11,18 @@ export default function createEmployeesObject(departmentName, employees) {
       return {
         next: () => {
           count++;
-          switch(count) {
+          switch (count) {
             case 0:
-              return {[departmentName]: staff[departmentName]};
+              return { [departmentName]: staff[departmentName] };
             default:
-              return {key: undefined, done: true};
+              return { key: undefined, done: true };
           }
-        }
+        },
       };
-    }
+    },
   };
 
   const data = iterable[Symbol.iterator]();
-
 
   return data.next();
 }
