@@ -3,21 +3,21 @@
 export default function createEmployeesObject(departmentName, employees) {
   const staff = {
     [departmentName]: employees,
-  }
+  };
 
   let count = -1;
   const iterable = {
-    [Symbol.iterator]: function() {
-      return { 
-          next: () => {
-              count++;
-              switch(count) {
-                case 0:
-                  return {[departmentName]: staff[departmentName]};
-                default:
-                  return {key: undefined, done: true};
-              }
+    [Symbol.iterator]: () => {
+      return {
+        next: () => {
+          count++;
+          switch(count) {
+            case 0:
+              return {[departmentName]: staff[departmentName]};
+            default:
+              return {key: undefined, done: true};
           }
+        }
       };
     }
   };
