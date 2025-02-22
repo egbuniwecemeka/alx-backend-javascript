@@ -7,10 +7,10 @@ export default function createEmployeesObject(departmentName, employees) {
 
   let count = -1;
   const iterable = {
-    [Symbol.iterator]: () => {
+    [Symbol.iterator]: () => ({
       return {
         next: () => {
-          count++;
+          count += 1;
           switch (count) {
             case 0:
               return { [departmentName]: staff[departmentName] };
@@ -19,7 +19,7 @@ export default function createEmployeesObject(departmentName, employees) {
           }
         },
       };
-    },
+    }),
   };
 
   const data = iterable[Symbol.iterator]();
