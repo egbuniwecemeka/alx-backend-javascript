@@ -1,11 +1,29 @@
 #!/usr/bin/node
 
-function createEmployeesObject(departmentName, employees) {
+export default function createEmployeesObject(departmentName, employees) {
     const staff = {
         [departmentName]: employees,
     }
 
-    return staff;
-}
+    let count = -1;
+    const iterable = {
+        [Symbol.iterator]: function() {
+            return { 
+                next: () => {
+                    count++;
+                    switch(count) {
+                        case 0:
+                            return {[departmentName]: staff[departmentName]};
+                        default:
+                            return {key: undefined, done: true};
+                    }
+                }
+             };
+        }
+    };
 
-console.log(createEmployeesObject("Software", ['Emeka', 'Blessing']));
+    const data = iterable[Symbol.iterator]();
+
+
+    return data.next();
+}
