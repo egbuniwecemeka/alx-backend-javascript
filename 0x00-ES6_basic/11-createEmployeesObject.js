@@ -1,5 +1,3 @@
-#!/usr/bin/node
-
 export default function createEmployeesObject(departmentName, employees) {
   const staff = {
     [departmentName]: employees,
