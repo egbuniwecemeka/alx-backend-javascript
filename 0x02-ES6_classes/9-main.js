@@ -4,8 +4,8 @@ console.log(listOfStudents);
 
 
 const eachStudent = listOfStudents.map(
-  student => student.getFullStudentDescription
-)
+  student => student.fullStudentDescription
+);
 
 console.log(eachStudent);
 console.log(listOfStudents[0] instanceof StudentHolberton);
