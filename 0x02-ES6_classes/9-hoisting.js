@@ -13,10 +13,10 @@ class ALXClass {
   }
 }
 
-const class2023 = new ALXClass(2023, 'Lagos');
-const class2025 = new ALXClass(2025, 'Abuja');
+const class2019 = new ALXClass(2023, 'Lagos');
+const class2020 = new ALXClass(2025, 'Abuja');
 
-class ALXStudent {
+class StudentALX {
     constructor(firstname, lastname, alxClass) {
       this._firstname = firstname;
       this._lastname = lastname;
@@ -36,7 +36,10 @@ class ALXStudent {
     }
 }
 
-const student1 = new ALXStudent('Egbuniwe', 'Emmanuel', class2023);
-const student2 = new ALXStudent('Emeka', 'Codes', class2025);
+const student1 = new StudentALX('Guillaume', 'Salva', class2020);
+const student2 = new StudentALX('John', 'Doe', class2020);
+const student3 = new StudentALX('Albert', 'Clinton', class2019);
+const student4 = new StudentALX('Donald', 'Bush', class2019);
+const student5 = new StudentALX('Jason', 'Sandler', class2019);
 
 export const listOfStudent = [student1, student2];
