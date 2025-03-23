@@ -32,7 +32,7 @@ class StudentALX {
     }
 
     getFullStudentDescription() {
-      return `${this._firstname} - ${this._lastname} - ${this._alxClass.year} - ${this.alxClass.location}`;
+      return `${this._firstname} ${this._lastname} - ${this._alxClass.year} - ${this.alxClass.location}`;
     }
 }
 
