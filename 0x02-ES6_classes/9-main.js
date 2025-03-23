@@ -4,7 +4,7 @@ console.log(listOfStudents);
 
 
 const eachStudent = listOfStudents.map(
-  student => student.getFullStudentDescription()
+  student => student.getFullStudentDescription
 )
 
 console.log(eachStudent);
