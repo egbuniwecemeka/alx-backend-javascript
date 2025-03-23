@@ -1,6 +1,9 @@
 import { listOfStudent } from "./9-hoisting";
 
-const eachStudent = listStudent.map(
+console.log(listOfStudent);
+
+
+const eachStudent = listOfStudent.map(
   student => student.getFullStudentDescription()
 )
 
