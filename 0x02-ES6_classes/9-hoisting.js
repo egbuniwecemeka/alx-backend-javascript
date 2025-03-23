@@ -39,4 +39,4 @@ class ALXStudent {
 const student1 = new ALXStudent('Egbuniwe', 'Emmanuel', class2023);
 const student2 = new ALXStudent('Emeka', 'Codes', class2025);
 
-export const listStudent = [student1, student2];
+export const listOfStudent = [student1, student2];
