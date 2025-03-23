@@ -13,4 +13,4 @@ import Car from "./10-car.js";
   cloneCar() {
     return new Car();
   }
- }
+}
