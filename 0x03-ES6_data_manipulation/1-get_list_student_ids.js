@@ -7,5 +7,6 @@ export default function getListStudentIds(obj) {
     return [];
   }
 
-  return getListStudents().map((iterate) => iterate.id);
+  array.push(getListStudents().map((iterate) => iterate.id))
+  return array;
 }
