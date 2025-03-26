@@ -8,6 +8,4 @@ export default function getListStudentIds(obj) {
   } else {
     return getListStudents().map((iterate) => iterate.id);
   }
-
-  return array;
 }
