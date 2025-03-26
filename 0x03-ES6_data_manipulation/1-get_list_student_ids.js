@@ -5,7 +5,7 @@ export default function getListStudentIds(obj) {
 
   if (!Array.isArray(obj)) {
     return [];
-  } else {
-    return getListStudents().map((iterate) => iterate.id);
   }
+
+  return getListStudents().map((iterate) => iterate.id);
 }
